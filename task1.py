@@ -25,14 +25,30 @@ constructor     - should require the student name, studentNumber and grade (in t
 class student:
 
     # properties should be listed first
+    name = ""
+    studentNumber = ""
+    grade = ""
+    courses = []
+    grades = []
 
-    def __init__(): # You will need to create your own input parameters for all methods
+
+
+
+    def student(self, name, studentNumber, grade): # You will need to create your own input parameters for all methods
+        self.name = str(name)
+        self.studentNumber = str(studentNumber)
+        self.grade = int(grade)
+
         pass
 
-    def __del__():
+    def course(self, courses, grades):
+        self.courses = courses
+        self.grades = grades
+        
         pass
 
     def average(self):
+        
         pass
 
 def main():
